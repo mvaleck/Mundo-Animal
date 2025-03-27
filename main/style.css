@@ -1,0 +1,19 @@
+.text {
+    background-color: red;
+    width: 15%;
+    text-align: center;
+
+}
+
+.categoria {
+    display: flex; /*itens ficam lado a lado*/
+    justify-content: center; /*alinha os 4 itens no meio*/
+    gap: 30px;/*espaçamento entre os itens*/
+    margin-top: 30px; /*espaçamento entre o contéudo depois do header, apenas acima (TOP)*/
+}
+
+.text button{
+    padding: 8px;
+    border-radius: 8px;
+    border-style: none;
+}
