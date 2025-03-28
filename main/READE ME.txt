@@ -1,0 +1,21 @@
+READE.ME
+
+primeira página
+
+html:
+menu
+capa
+nav sobre os animais
+
+
+
+css:
+estilização do site
+
+
+
+javascript: interatividade
+
+1. interativizar o menu, quando clicar no home volta pra cima, quando clicar nos animais rola pra baixo pra mostrar a seção
+
+2. interativizar as categorias de animais, quando clicar em um animal, vai pra página do tal animal etc

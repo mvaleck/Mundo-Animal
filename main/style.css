@@ -1,22 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
 body{ 
     margin: 0;
+    background-color: #e7d6b0;
+}
+
+body .menu {
+    margin:0;
+    align-items: center;
 }
 
 .menu {
-    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif ;
+    background-color: rgb(48, 77, 46);
     display: flex;
     justify-content: space-between;
     list-style: none;
-    padding: 30px;
-    margin-left: 10px;
+    padding: 3px;
+
+}
+
+.menu li {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.botaoMenu {
+    cursor: pointer;
+    background-color: rgb(48, 77, 46);
+    border-style: none;
+    color: white;
+    font-size: 20px;
+    transition: background-color 0.5s;
+}
+
+.botaoMenu:hover {
+   background-color: rgb(134, 192, 130);
+   border-radius: 10px;
+   padding: 5px;
 }
 
 
+
 .text {
-    background-color: red;
+    background-color: rgb(160, 202, 156);
     width: 18%;
     text-align: center;
-
+    border-radius: 10px;
+    
 }
 
 .categoria {
@@ -27,8 +59,22 @@ body{
 }
 
 .text button{
+    cursor: pointer;
     padding: 8px;
     border-radius: 8px;
     border-style: none;
+    transition: background-color 0.5s;
+
 }
+
+.text img {
+    margin-top: 10px;
+}
+
+footer{
+    margin-top: 70px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
 
