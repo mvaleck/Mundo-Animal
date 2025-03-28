@@ -52,3 +52,25 @@ pageM.addEventListener('click' , clicou)
 function clicou() {
     window.location.href ='mamiferos.html'
 }
+
+//GO TO AVES
+const pageA = document.getElementById('pageA')
+pageA.addEventListener('click' , clicouA)
+function clicouA() {
+    window.location.href ='aves.html'
+}
+
+//GO TO REPTEIS
+const pageR = document.getElementById('pageR')
+pageR.addEventListener('click' , clicouR)
+function clicouR() {
+    window.location.href ='repteis.html'
+}
+
+//GO TO INSETOS
+const pageI = document.getElementById('pageI')
+pageI.addEventListener('click' , clicouI)
+function clicouI() {
+    window.location.href = 'insetos.html'
+    
+}
