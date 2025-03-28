@@ -44,11 +44,14 @@ body .menu {
 
 
 .text {
-    background-color: rgb(160, 202, 156);
     width: 18%;
     text-align: center;
     border-radius: 10px;
     
+}
+
+.text p{
+    text-align: justify;
 }
 
 .categoria {
@@ -64,6 +67,7 @@ body .menu {
     border-radius: 8px;
     border-style: none;
     transition: background-color 0.5s;
+    margin-bottom: 20px;
 
 }
 
@@ -75,6 +79,10 @@ footer{
     margin-top: 70px;
     margin-bottom: 30px;
     text-align: center;
+}
+
+#folha {
+    float: left ;
 }
 
 
