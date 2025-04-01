@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Monomakh&display=swap');
+/*font-family: "Monomakh", system-ui;*/
 
 body{ 
     margin: 0;
@@ -12,7 +13,6 @@ body .menu {
 }
 
 .menu {
-    font-family: Arial, Helvetica, sans-serif ;
     background-color: rgb(48, 77, 46);
     display: flex;
     justify-content: space-between;
@@ -32,13 +32,15 @@ body .menu {
     border-style: none;
     color: white;
     font-size: 20px;
-    transition: background-color 0.5s;
+    transition: 0.5s;
+    font-family: "Monomakh", system-ui;
 }
 
 .botaoMenu:hover {
    background-color: rgb(134, 192, 130);
    border-radius: 10px;
    padding: 5px;
+   border-radius: 10px;
 }
 
 
@@ -85,4 +87,32 @@ footer{
     float: left ;
 }
 
+.comoAjudar {
+    padding: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.comoAjudar h1{
+    font-size: 50px;
+
+}
+
+#links a{
+    text-decoration: none;
+    color: rgb(26, 80, 48);
+}
+
+#links a:hover{
+    color: rgb(255, 62, 62);
+}
+
+footer {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+    padding: 20px;
+    background-color: rgb(13, 46, 13);
+    text-align: center;
+}
 

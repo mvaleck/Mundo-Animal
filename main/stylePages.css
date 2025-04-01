@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Monomakh&display=swap');
+/*font-family: "Monomakh", system-ui;*/
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200&display=swap');
+/* font-family: "Lexend Deca", sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+/*  font-family: "Libre Baskerville", serif;*/
+
+body {
+    background-color: rgb(244, 253, 209);
+    margin: 0;
+    
+}
+
+header{
+    background-color: rgb(235, 226, 177);
+    padding: 15px;
+    
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 60px;
+}
+
+
+.nav {
+    margin-top: 20px;
+    display: flex;
+    list-style: none;
+    gap: 80px;
+    justify-content: center;
+}
+
+.botao {
+    border-radius: 25px;
+    padding: 6px;
+    border-color: rgb(15, 48, 16);
+    background-color: rgb(245, 236, 188);
+    font-family: "Lexend Deca", sans-serif;
+}
+
+h2{
+    text-align: center;
+    font-family: "Monomakh", system-ui;
+    font-size: 40px;
+    
+    
+}
+article{
+}
+
+.categoria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 160px; 
+    margin-top: 25px;
+    margin-bottom: 60px;
+}
+
+.intro {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    margin: auto;
+    font-size: 23px;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.tituloPage{
+    text-align: justify;
+    font-family: Lexend Deca, sans-serif;
+    width: 60%;
+    margin: auto;
+    
+
+}
+
+.txtAnimais {
+    background-color: white;
+    border-radius: 20px;
+    width: 30%;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+h1{
+    font-family: "Monomakh", system-ui;
+    color: rgb(11, 63, 9);
+    font-size: 30px;
+    text-align: center;
+}
+
+.txtAnimais img {
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+footer {
+    margin-top: 70px;
+    color: white;
+    padding: 20px;
+    background-color: rgb(13, 46, 13);
+    text-align: center;
+}
+
+.scrollTopBtn {
+    position: fixed;
+    bottom: 160px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #2c4429;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0; /* Começa invisível */
+    visibility: hidden; /* Garante que o botão não fique clicável enquanto invisível */
+    transition: opacity 0.5s ease-in-out, visibility 0.5s;
+}
+
+.scrollTopBtn.show {
+    opacity: 1; /* Torna visível */
+    visibility: visible;
+}
+
