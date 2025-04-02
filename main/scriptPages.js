@@ -89,131 +89,127 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
 
-//SEÇÃO RAPINA
-let rapina = document.getElementById('rapina')
-let secaoRapina = document.getElementById('secaoRapina')
-rapina.addEventListener('click', function () {
-    secaoRapina.scrollIntoView({behavior:"smooth"})
-})
+    //SEÇÃO RAPINA
+    let rapina = document.getElementById('rapina')
+    let secaoRapina = document.getElementById('secaoRapina')
+    rapina.addEventListener('click', function () {
+        secaoRapina.scrollIntoView({behavior:"smooth"})
+    })
 
-//SEÇÃO Aquáticas
-let aquaticas = document.getElementById('aquaticas')
-let secaoAquaticas = document.getElementById('secaoAquaticas')
-aquaticas.addEventListener('click', function () {
-    secaoAquaticas.scrollIntoView({behavior:"smooth"})
-})
+    //SEÇÃO Aquáticas
+    let aquaticas = document.getElementById('aquaticas')
+    let secaoAquaticas = document.getElementById('secaoAquaticas')
+    aquaticas.addEventListener('click', function () {
+        secaoAquaticas.scrollIntoView({behavior:"smooth"})
+    })
 
-//SEÇÃO CANORAS
-let canoras = document.getElementById('canoras')
-let secaoCanoras = document.getElementById('secaoCanoras')
-canoras.addEventListener('click', function () {
-    secaoCanoras.scrollIntoView({behavior:"smooth"})
-})
+    //SEÇÃO CANORAS
+    let cantoras = document.getElementById('cantoras')
+    let secaoCantoras = document.getElementById('secaoCantoras')
+    cantoras.addEventListener('click', function () {
+        secaoCantoras.scrollIntoView({behavior:"smooth"})
+    })
 
-//SEÇÃO Exóticas
-let exoticas = document.getElementById('exoticas')
-let secaoExoticas = document.getElementById('secaoExoticas')
-exoticas.addEventListener('click', function () {
-    secaoExoticas.scrollIntoView({behavior:"smooth"})
-})
+    //SEÇÃO Exóticas
+    let exoticas = document.getElementById('exoticas')
+    let secaoExoticas = document.getElementById('secaoExoticas')
+    exoticas.addEventListener('click', function () {
+        secaoExoticas.scrollIntoView({behavior:"smooth"})
+    })
 
-//SEÇÃO CORREDORAS
-let corredoras = document.getElementById('corredoras')
-let secaoCorredoras = document.getElementById('secaoCorredoras')
-corredoras.addEventListener('click', function () {
-    secaoCorredoras.scrollIntoView({behavior:"smooth"})
-})
-    
+    //SEÇÃO CORREDORAS
+    let corredoras = document.getElementById('corredoras')
+    let secaoCorredoras = document.getElementById('secaoCorredoras')
+    corredoras.addEventListener('click', function () {
+        secaoCorredoras.scrollIntoView({behavior:"smooth"})
+    })
+        
 });
 
 //tamanho imagem page INSETOS.HTML
 document.addEventListener('DOMContentLoaded', function () {
-let imgInsetos = document.querySelectorAll('.imgInsetos')
-imgInsetos.forEach(function (img) {
-    img.style.width = '50%'
+    let imgInsetos = document.querySelectorAll('.imgInsetos')
+    imgInsetos.forEach(function (img) {
+        img.style.width = '50%'
 
-})
-    
-//go to seção serpentes
-let serpentes = document.getElementById('serpentes')
-let secaoSerpentes = document.getElementById('secaoSerpentes')
-serpentes.addEventListener('click', function () {
-    secaoSerpentes.scrollIntoView({behavior:"smooth"})
-})
+    })
+        
+    //go to seção serpentes
+    let serpentes = document.getElementById('serpentes')
+    let secaoSerpentes = document.getElementById('secaoSerpentes')
+    serpentes.addEventListener('click', function () {
+        secaoSerpentes.scrollIntoView({behavior:"smooth"})
+    })
 
-//go to seção CROCO
-let croco = document.getElementById('croco')
-let secaoCroco = document.getElementById('secaoCroco')
-croco.addEventListener('click', function () {
-    secaoCroco.scrollIntoView({behavior:"smooth"})
-})
+    //go to seção CROCO
+    let croco = document.getElementById('croco')
+    let secaoCroco = document.getElementById('secaoCroco')
+    croco.addEventListener('click', function () {
+        secaoCroco.scrollIntoView({behavior:"smooth"})
+    })
 
-//go to seção LAGARTOS
-let lagartos = document.getElementById('lagartos')
-let secaoLagartos = document.getElementById('secaoLagartos')
-lagartos.addEventListener('click', function () {
-    secaoLagartos.scrollIntoView({behavior:"smooth"})
-})
+    //go to seção LAGARTOS
+    let lagartos = document.getElementById('lagartos')
+    let secaoLagartos = document.getElementById('secaoLagartos')
+    lagartos.addEventListener('click', function () {
+        secaoLagartos.scrollIntoView({behavior:"smooth"})
+    })
 
-//secao QUELO
-let quelo = document.getElementById('quelo')
-let secaoQuelo = document.getElementById('secaoQuelo')
-quelo.addEventListener('click', function () {
-    secaoQuelo.scrollIntoView({behavior:"smooth"})
-})
+    //secao QUELO
+    let quelo = document.getElementById('quelo')
+    let secaoQuelo = document.getElementById('secaoQuelo')
+    quelo.addEventListener('click', function () {
+        secaoQuelo.scrollIntoView({behavior:"smooth"})
+    })
 });
 
 document.addEventListener('DOMContentLoaded', function(){
 //secao poli
-let poli = document.getElementById('poli')
-let secaoPoli = document.getElementById('secaoPoli')
-poli.addEventListener('click', function () {
-    secaoPoli.scrollIntoView({behavior:"smooth"})
-})
+    let poli = document.getElementById('poli')
+    let secaoPoli = document.getElementById('secaoPoli')
+    poli.addEventListener('click', function () {
+        secaoPoli.scrollIntoView({behavior:"smooth"})
+    })
 
-//secao cantores
-let cant = document.getElementById('cant')
-let secaoCant = document.getElementById('secaoCant')
-cant.addEventListener('click', function () {
-    secaoCant.scrollIntoView({behavior:"smooth"})
-})
+    //secao cantores
+    let cant = document.getElementById('cant')
+    let secaoCant = document.getElementById('secaoCant')
+    cant.addEventListener('click', function () {
+        secaoCant.scrollIntoView({behavior:"smooth"})
+    })
 
-//secao beneficos
-let bene = document.getElementById('bene')
-let secaoBene = document.getElementById('secaoBene')
-bene.addEventListener('click', function () {
-    secaoBene.scrollIntoView({behavior:"smooth"})
-})
+    //secao beneficos
+    let bene = document.getElementById('bene')
+    let secaoBene = document.getElementById('secaoBene')
+    bene.addEventListener('click', function () {
+        secaoBene.scrollIntoView({behavior:"smooth"})
+    })
 
-//secao perigosos
-let peri = document.getElementById('peri')
-let secaoPeri = document.getElementById('secaoPeri')
-peri.addEventListener('click', function () {
-    secaoPeri.scrollIntoView({behavior:"smooth"})
-})
+    //secao perigosos
+    let peri = document.getElementById('peri')
+    let secaoPeri = document.getElementById('secaoPeri')
+    peri.addEventListener('click', function () {
+        secaoPeri.scrollIntoView({behavior:"smooth"})
+    })
 });
-
-
-
-
 
 
 //SETA BOTÃO: Mostra o botão quando o usuário rola para baixo
-let scrollBtn = document.querySelector(".scrollTopBtn");
-window.addEventListener("scroll", function () {
-    if (window.scrollY > 300) {
-        scrollBtn.classList.add("show"); // Aparece suavemente
-    } else {
-        scrollBtn.classList.remove("show"); // Some suavemente
-    }
-});
-
-scrollBtn.addEventListener("click", function () {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
+    let scrollBtn = document.querySelector(".scrollTopBtn");
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+            scrollBtn.classList.add("show"); // Aparece suavemente
+        } else {
+            scrollBtn.classList.remove("show"); // Some suavemente
+        }
     });
-});
+
+    scrollBtn.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
 
 // ALTERAÇÃO IMG E CONTEÚDO DENTRO DO BLOCK
 document.addEventListener('DOMContentLoaded', function () {
@@ -229,5 +225,3 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
 })
-
-
