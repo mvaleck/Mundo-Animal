@@ -126,8 +126,8 @@ corredoras.addEventListener('click', function () {
     
 });
 
+//tamanho imagem page INSETOS.HTML
 document.addEventListener('DOMContentLoaded', function () {
-
 let imgInsetos = document.querySelectorAll('.imgInsetos')
 imgInsetos.forEach(function (img) {
     img.style.width = '50%'
@@ -214,3 +214,20 @@ scrollBtn.addEventListener("click", function () {
         behavior: "smooth"
     });
 });
+
+// ALTERAÇÃO IMG E CONTEÚDO DENTRO DO BLOCK
+document.addEventListener('DOMContentLoaded', function () {
+    const catRepteis = document.querySelectorAll('.catRepteis')
+    catRepteis.forEach(function (div) {
+        div.style.width = '100%'
+        div.style.padding = "30px";
+    })
+
+    const imgRepteis = document.querySelectorAll('.imgRepteis')
+    imgRepteis.forEach(function (img) {
+        img.style.width = '40%'
+    })
+
+})
+
+

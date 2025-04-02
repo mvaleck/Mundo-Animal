@@ -44,6 +44,7 @@ header{
 }
 
 h2{
+    color: #1d311a;
     text-align: center;
     font-family: "Monomakh", system-ui;
     font-size: 40px;
@@ -141,3 +142,9 @@ footer {
     margin-top: 20px; 
     
 }
+
+.ulRepteis {
+    text-align: justify;
+    margin-left: 90px;
+}
+
