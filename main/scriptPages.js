@@ -44,8 +44,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //function pra quando clicar no botao, rolar pra section correta
 //seção felinos
-    const felinos = document.getElementById('felinos')
-    const secaoFelinos = document.getElementById('secaoFelinos')
+    let felinos = document.getElementById('felinos')
+    let secaoFelinos = document.getElementById('secaoFelinos')
 
     felinos.addEventListener('click', function () {
         secaoFelinos.scrollIntoView({behavior: "smooth"})
@@ -53,36 +53,87 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
 //secao caes
-    const caes = document.getElementById('caes')
-    const secaoCaes = document.getElementById('secaoCaes')
+    let caes = document.getElementById('caes')
+    let secaoCaes = document.getElementById('secaoCaes')
     caes.addEventListener('click', function () {
         secaoCaes.scrollIntoView({behavior: "smooth"})
         
     })
 
 //SEÇÃO MARINHOS
-    const marinhos = document.getElementById('marinhos')
-    const secaoMarinhos = document.getElementById('secaoMarinhos')
+    let marinhos = document.getElementById('marinhos')
+    let secaoMarinhos = document.getElementById('secaoMarinhos')
     marinhos.addEventListener('click', function () {
         secaoMarinhos.scrollIntoView({behavior: "smooth"})
         
     })
 
 //seção gm
-    const gm = document.getElementById('gm')
-    const secaoGm = document.getElementById('secaoGm')
+    let gm = document.getElementById('gm')
+    let secaoGm = document.getElementById('secaoGm')
     gm.addEventListener('click', function () {
         secaoGm.scrollIntoView({behavior: "smooth"})
         
     })
 
 //SEÇÃO Outros
-    const outros = document.getElementById('outros')
-    const secaoOutros = document.getElementById('secaoOutros')
+    let outros = document.getElementById('outros')
+    let secaoOutros = document.getElementById('secaoOutros')
     outros.addEventListener('click', function () {
         secaoOutros.scrollIntoView({behavior: "smooth"})
         
     })
+
+
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+
+//SEÇÃO RAPINA
+let rapina = document.getElementById('rapina')
+let secaoRapina = document.getElementById('secaoRapina')
+rapina.addEventListener('click', function () {
+    secaoRapina.scrollIntoView({behavior:"smooth"})
+})
+
+//SEÇÃO Aquáticas
+let aquaticas = document.getElementById('aquaticas')
+let secaoAquaticas = document.getElementById('secaoAquaticas')
+aquaticas.addEventListener('click', function () {
+    secaoAquaticas.scrollIntoView({behavior:"smooth"})
+})
+
+//SEÇÃO CANORAS
+let canoras = document.getElementById('canoras')
+let secaoCanoras = document.getElementById('secaoCanoras')
+canoras.addEventListener('click', function () {
+    secaoCanoras.scrollIntoView({behavior:"smooth"})
+})
+
+//SEÇÃO Exóticas
+let exoticas = document.getElementById('exoticas')
+let secaoExoticas = document.getElementById('secaoExoticas')
+exoticas.addEventListener('click', function () {
+    secaoExoticas.scrollIntoView({behavior:"smooth"})
+})
+
+//SEÇÃO CORREDORAS
+let corredoras = document.getElementById('corredoras')
+let secaoCorredoras = document.getElementById('secaoCorredoras')
+corredoras.addEventListener('click', function () {
+    secaoCorredoras.scrollIntoView({behavior:"smooth"})
+})
+
+
+
+    
+});
+
+
+
+
+
+
 
 
 //SETA BOTÃO: Mostra o botão quando o usuário rola para baixo
@@ -100,7 +151,4 @@ scrollBtn.addEventListener("click", function () {
         top: 0,
         behavior: "smooth"
     });
-});
-
-
 });
