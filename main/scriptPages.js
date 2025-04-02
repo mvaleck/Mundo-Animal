@@ -123,13 +123,75 @@ let secaoCorredoras = document.getElementById('secaoCorredoras')
 corredoras.addEventListener('click', function () {
     secaoCorredoras.scrollIntoView({behavior:"smooth"})
 })
-
-
-
     
 });
 
+document.addEventListener('DOMContentLoaded', function () {
 
+let imgInsetos = document.querySelectorAll('.imgInsetos')
+imgInsetos.forEach(function (img) {
+    img.style.width = '50%'
+
+})
+    
+//go to seção serpentes
+let serpentes = document.getElementById('serpentes')
+let secaoSerpentes = document.getElementById('secaoSerpentes')
+serpentes.addEventListener('click', function () {
+    secaoSerpentes.scrollIntoView({behavior:"smooth"})
+})
+
+//go to seção CROCO
+let croco = document.getElementById('croco')
+let secaoCroco = document.getElementById('secaoCroco')
+croco.addEventListener('click', function () {
+    secaoCroco.scrollIntoView({behavior:"smooth"})
+})
+
+//go to seção LAGARTOS
+let lagartos = document.getElementById('lagartos')
+let secaoLagartos = document.getElementById('secaoLagartos')
+lagartos.addEventListener('click', function () {
+    secaoLagartos.scrollIntoView({behavior:"smooth"})
+})
+
+//secao QUELO
+let quelo = document.getElementById('quelo')
+let secaoQuelo = document.getElementById('secaoQuelo')
+quelo.addEventListener('click', function () {
+    secaoQuelo.scrollIntoView({behavior:"smooth"})
+})
+});
+
+document.addEventListener('DOMContentLoaded', function(){
+//secao poli
+let poli = document.getElementById('poli')
+let secaoPoli = document.getElementById('secaoPoli')
+poli.addEventListener('click', function () {
+    secaoPoli.scrollIntoView({behavior:"smooth"})
+})
+
+//secao cantores
+let cant = document.getElementById('cant')
+let secaoCant = document.getElementById('secaoCant')
+cant.addEventListener('click', function () {
+    secaoCant.scrollIntoView({behavior:"smooth"})
+})
+
+//secao beneficos
+let bene = document.getElementById('bene')
+let secaoBene = document.getElementById('secaoBene')
+bene.addEventListener('click', function () {
+    secaoBene.scrollIntoView({behavior:"smooth"})
+})
+
+//secao perigosos
+let peri = document.getElementById('peri')
+let secaoPeri = document.getElementById('secaoPeri')
+peri.addEventListener('click', function () {
+    secaoPeri.scrollIntoView({behavior:"smooth"})
+})
+});
 
 
 
