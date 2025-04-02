@@ -1,27 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Aves</title>
     <link rel="stylesheet" href="stylePages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
-     
+
     <header>
+        <ul class="menu">
+            <li><img src="logo.png" width="60px" alt=""></li>
+            <li>
+                <h2>CONHEÇA AS AVES</h2>
+            </li>
+            <li><button class="botao" id="home">HOME</button></li>
+        </ul>
+
         <nav>
-            <ul class="menu">
-                <li><img src="logo.png" alt="logo" width="90px" height="auto"></li>
-                <li><button class="botaoMenu">Aves</button></li>
-                <li><button id="home" class="botaoMenu">Home</button></li>
+            <ul class="nav">
+                <li><button class="botao" id="rapina"> de Rapina</button></li>
+                <li><button class="botao" id="aquaticas">Aquáticas</button></li>
+                <li><button class="botao" id="cantoras">Cantoras</button></li>
+                <li><button class="botao" id="exoticas">Exóticas e Tropicais</button></li>
+                <li><button class="botao" id="corredoras">Corredoras</button></li>
             </ul>
         </nav>
     </header>
 
+    <article>
 
+        <div class="intro">
+            <p> As aves são seres fascinantes que habitam diversos ambientes ao redor do mundo. Com penas, bicos e a
+                incrível capacidade de voar (em sua maioria), elas desempenham um papel essencial nos ecossistemas e
+                encantam com suas cores, cantos e comportamentos únicos.</p>
+        </div>
+
+        <div id="secaoRapina" class="tituloPage">
+            <h1>Aves de Rapina</h1>
+            <p>Aves de rapina são predadoras e possuem visão aguçada, garras afiadas e bicos curvados para capturar suas
+                presas.</p>
+        </div>
+
+        <section class="categoria">
+            <div class="txtAnimais">
+                <img src="aguia.jpeg" alt="Águia">
+                <h1>Águias</h1>
+                <p>Têm uma das melhores visões do reino animal, podendo enxergar presas a quilômetros de distância.</p>
+            </div>
+
+            <div class="txtAnimais">
+                <img src="falcao.jpeg" alt="Falcão">
+                <h1>Falcões</h1>
+                <p>São os pássaros mais rápidos do mundo, atingindo mais de 300 km/h em mergulho.</p>
+            </div>
+
+            <div class="txtAnimais">
+                <img src="coruja.jpeg" alt="Coruja">
+                <h1>Corujas</h1>
+                <p> Conseguem girar a cabeça em até 270° para enxergar melhor.</p>
+            </div>
+            <div class="txtAnimais">
+                <img src="gaviao.jpeg" alt="Gavião">
+                <h1>Gaviões</h1>
+                <p>São especialistas em caçar pequenos animais, como roedores e répteis.</p>
+            </div>
+        </section>
+
+
+
+        <div id="secaoAquaticas" class="tituloPage">
+            <h1>Aves Aquáticas</h1>
+            <p>Essas aves vivem próximas a lagos, rios ou oceanos e muitas têm membranas entre os dedos para nadar
+                melhor.</p>
+        </div>
+
+        <section class="categoria">
+            <div class="txtAnimais">
+                <img src="pato.jpeg" alt="Pato">
+                <h1>Patos</h1>
+                <p>Conseguem dormir com um olho aberto para vigiar predadores.</p>
+            </div>
+
+            <div class="txtAnimais">
+                <img src="cisne.jpeg" alt="Cisnes">
+                <h1>Cisnes</h1>
+                <p>São extremamente fiéis, formando casais para a vida toda.</p>
+            </div>
+
+            <div class="txtAnimais">
+                <img src="flamingos.jpeg" alt="Flamingos">
+                <h1>Flamingos</h1>
+                <p>Ficam rosados por causa dos pigmentos dos crustáceos que comem.</p>
+            </div>
+
+            <div class="txtAnimais">
+                <img src="pinguin.jpeg" alt="Pinguins">
+                <h1>Pinguins</h1>
+                <p>Algumas espécies podem nadar a uma velocidade de até 36 km/h!</p>
+            </div>
+        </section>
+
+
+        <div id="secaoCantoras" class="tituloPage">
+            <h1>Aves Cantoras (Passarinhos)</h1>
+            <p>Conhecidas por seus cantos melodiosos, essas aves usam sons para se comunicar e atrair parceiros.</p>
+        </div>
+
+        <section class="categoria">
+            <div class="txtAnimais">
+                <img src="canario.jpg" alt="Canários">
+                <h1>Canários</h1>
+                <p> Seus cantos podem variar conforme o ambiente e os estímulos sonoros que recebem.</p>
+            </div>
+
+            <div class="txtAnimais">
+                <img src="sabia.jpg" alt="Sabiás">
+                <h1>Sabiás</h1>
+                <p>São considerados os “poetas das florestas” por seus cantos complexos</p>
+            </div>
+
+            <div class="txtAnimais">
+                <img src="curio.jpg" alt="Curió">
+                <h1>Curiós</h1>
+                <p>Aprendem seus cantos ouvindo outros pássaros mais velhos.</p>
+            </div>
+        </section>
+
+
+        <div id="secaoExoticas" class="tituloPage">
+            <h1>Aves Exóticas e Tropicais</h1>
+            <p>Coloridas e vibrantes, essas aves geralmente vivem em florestas tropicais e têm hábitos sociais
+                interessantes.</p>
+        </div>
+
+        <section class="categoria">
+            <div class="txtAnimais">
+                <img src="araras.jpg" alt="Araras">
+                <h1>Araras</h1>
+                <p>Têm bicos superfortes, capazes de quebrar até cocos.</p>
+            </div>
+
+            <div class="txtAnimais">
+                <img src="papagaio.jpg" alt="Papagaio">
+                <h1>Papagaios</h1>
+                <p> São famosos por imitar a voz humana e outros sons.</p>
+            </div>
+
+            <div class="txtAnimais">
+                <img src="tucano.jpg" alt="Tucano">
+                <h1>Tucanos</h1>
+                <p>Seu enorme bico os ajuda a regular a temperatura corporal.</p>
+            </div>
+
+            <div class="txtAnimais">
+                <img src="loris.jpeg" alt="Loris">
+                <h1>Loris</h1>
+                <p>São pequenos papagaios que se alimentam principalmente de néctar.</p>
+            </div>
+
+            <div class="txtAnimais">
+                <img src="pavao.jpg" alt="Pavão">
+                <h1>Pavão</h1>
+                <p>O pavão é conhecido por sua plumagem exuberante e colorida, especialmente nos machos, que possuem um
+                    impressionante leque de penas iridescentes. Essa exibição é usada para atrair fêmeas durante o
+                    acasalamento. </p>
+            </div>
+        </section>
+
+
+        <div id="secaoCorredoras" class="tituloPage">
+            <h1>Aves Corredoras</h1>
+            <p>Essas aves não voam, mas são muito rápidas em terra!</p>
+        </div>
+
+        <section class="categoria">
+            <div class="txtAnimais">
+                <img src="avestruz.jpg" alt="Avestruz">
+                <h1>Avestruzes</h1>
+                <p>São as aves mais rápidas do mundo, correndo até 70 km/h.</p>
+            </div>
+
+            <div class="txtAnimais">
+                <img src="ema.jpeg" alt="Ema">
+                <h1>Emas</h1>
+                <p>São parentes das avestruzes e podem atingir 60 km/h.</p>
+            </div>
+
+            <div class="txtAnimais">
+                <img src="casuares.jpg" alt="Casuares">
+                <h1>Casuares</h1>
+                <p>Consideradas as aves mais perigosas, têm garras afiadas capazes de ferir gravemente um predador.</p>
+            </div>
+        </section>
+
+    </article>
+
+    <button class="scrollTopBtn">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <footer>
+        <p>&copy; 2025 Milena Valeck. Todos os direitos reservados.</p>
+        <a href="https://github.com/mvaleck" target="_blank"><img src="github.png" width="50px" alt="icone git hub"></a>
+    </footer>
 
     <script src="scriptPages.js"></script>
 
 </body>
+
 </html>
