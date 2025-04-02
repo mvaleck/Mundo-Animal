@@ -74,3 +74,28 @@ function clicouI() {
     window.location.href = 'insetos.html'
     
 }
+
+//GO to como ajudar
+const comoAjudar = document.getElementById('comoAjudar')
+const secaoComoajudar = document.querySelector('.comoAjudar')
+
+comoAjudar.addEventListener('click', function () {
+    secaoComoajudar.scrollIntoView({behavior: 'smooth'})
+})
+
+//SETA BOTÃO
+let scrollBtn = document.querySelector(".scrollTopBtn");
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 300) {
+        scrollBtn.classList.add("show"); // Aparece suavemente
+    } else {
+        scrollBtn.classList.remove("show"); // Some suavemente
+    }
+});
+
+scrollBtn.addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});

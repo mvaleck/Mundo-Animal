@@ -84,11 +84,9 @@ document.addEventListener('DOMContentLoaded', function () {
         
     })
 
-//seta inteligente
 
-// Mostra o botão quando o usuário rola para baixo
+//SETA BOTÃO: Mostra o botão quando o usuário rola para baixo
 let scrollBtn = document.querySelector(".scrollTopBtn");
-
 window.addEventListener("scroll", function () {
     if (window.scrollY > 300) {
         scrollBtn.classList.add("show"); // Aparece suavemente
