@@ -1,57 +1,67 @@
-/* Estilos gerais para telas menores */
+/* Ajustes gerais */
 @media (max-width: 768px) {
-    /* Ajuste geral do corpo */
+    * {
+        box-sizing: border-box; /* Evita que padding/margin aumentem o tamanho real do elemento */
+        max-width: 100%; /* Impede que qualquer elemento ultrapasse a tela */
+    }
+
     body {
-        font-size: 14px; /* Reduz o tamanho da fonte */
-        line-height: 1.5; /* Melhora o espaçamento entre linhas */
-        padding: 10px; /* Evita que os elementos fiquem colados nas laterais */
-        overflow-x: hidden; /* Impede rolagem lateral indesejada */
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 10px;
+        margin: 0;
+        overflow-x: hidden; /* Impede rolagem lateral */
+        width: 100vw; /* Garante que o site ocupe toda a tela */
     }
 
     /* Container principal */
     .container {
-        width: 100%; /* Garante que o container ocupe toda a largura disponível */
-        max-width: 90%; /* Define um limite para evitar que os elementos fiquem esticados */
-        margin: auto; /* Centraliza o conteúdo */
-        padding: 10px; /* Adiciona um espaçamento interno */
         display: flex;
-        flex-wrap: wrap; /* Permite que os elementos se reorganizem quando não couberem */
-    }
-
-    /* Ajuste de imagens */
-    img {
-        max-width: 100%; /* Garante que as imagens não ultrapassem o tamanho da tela */
-        height: auto; /* Mantém a proporção da imagem */
-        display: block; /* Evita espaçamentos indesejados ao redor da imagem */
-        margin: auto; /* Centraliza as imagens */
-    }
-
-    /* Ajuste de botões */
-    .btn {
-        width: 100%; /* Faz os botões ocuparem a largura total */
+        flex-direction: column; /* Garante que os elementos fiquem empilhados */
+        width: 100%;
+        max-width: 100%;
         padding: 10px;
+    }
+
+    /* Corrigindo imagens */
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    /* Botões */
+    .btn {
+        width: 100%;
+        padding: 12px;
         font-size: 16px;
         text-align: center;
     }
 
-    /* Ajuste de navegação (caso tenha um menu fixo) */
+    /* Menus e listas */
     .menu {
-        flex-direction: column; /* Empilha os itens do menu */
-        align-items: center; /* Centraliza os itens */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
-    /* Ajuste de títulos e textos */
+    /* Títulos e textos */
     h1, h2, h3 {
-        text-align: center; /* Centraliza os títulos */
+        text-align: center;
     }
 
     p {
-        text-align: justify; /* Melhora a leitura do texto */
+        text-align: justify;
+        margin: 5px;
+        padding: 5px;
     }
 
-    /* Correção para evitar cortes na página */
-    html, body {
-        min-height: 100vh;
+    /* Evita que seções fiquem maiores que a tela */
+    section {
         width: 100%;
+        max-width: 100%;
+        padding: 10px;
     }
 }
