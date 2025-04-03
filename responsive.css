@@ -1,8 +1,7 @@
-/* Ajustes gerais */
 @media (max-width: 768px) {
     * {
-        box-sizing: border-box; /* Evita que padding/margin aumentem o tamanho real do elemento */
-        max-width: 100%; /* Impede que qualquer elemento ultrapasse a tela */
+        box-sizing: border-box;
+        max-width: 100%;
     }
 
     body {
@@ -11,19 +10,24 @@
         padding: 10px;
         margin: 0;
         overflow-x: hidden; /* Impede rolagem lateral */
-        width: 100vw; /* Garante que o site ocupe toda a tela */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
-    /* Container principal */
-    .container {
+    /* Layouts muito largos */
+    .container, .section, .content {
         display: flex;
-        flex-direction: column; /* Garante que os elementos fiquem empilhados */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         width: 100%;
         max-width: 100%;
         padding: 10px;
     }
 
-    /* Corrigindo imagens */
+    /* Imagens */
     img {
         max-width: 100%;
         height: auto;
@@ -33,13 +37,13 @@
 
     /* Botões */
     .btn {
-        width: 100%;
+        width: 90%;
         padding: 12px;
         font-size: 16px;
         text-align: center;
     }
 
-    /* Menus e listas */
+    /* Menus */
     .menu {
         display: flex;
         flex-direction: column;
@@ -47,7 +51,7 @@
         width: 100%;
     }
 
-    /* Títulos e textos */
+    /* Textos */
     h1, h2, h3 {
         text-align: center;
     }
@@ -58,10 +62,9 @@
         padding: 5px;
     }
 
-    /* Evita que seções fiquem maiores que a tela */
-    section {
-        width: 100%;
-        max-width: 100%;
-        padding: 10px;
+    /* Corrigindo larguras fixas */
+    .largura-fixa {
+        width: 100% !important;
+        max-width: 100% !important;
     }
 }
