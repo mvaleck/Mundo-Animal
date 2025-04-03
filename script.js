@@ -2,9 +2,15 @@
 let botaoSM = document.querySelectorAll('.botaoSM');
 
 botaoSM.forEach(function(botao) { //for each pra percorrer todos os botoes
-    botao.addEventListener('mouseenter', entra);  // Aplica o evento de mouseenter em cada botão
-    botao.addEventListener('mouseout', sai);  // Aplica o evento de mouseout em cada botão
-
+    if ("ontouchstart" in window) {
+        // Para dispositivos móveis, usar touchstart e touchend
+        botao.addEventListener('touchstart', entra);
+        botao.addEventListener('touchend', sai);
+    } else {
+        // Para desktop, manter mouseenter e mouseout
+        botao.addEventListener('mouseenter', entra);
+        botao.addEventListener('mouseout', sai);
+    }
 });
 
 function entra(event) {
@@ -15,8 +21,6 @@ function sai(event) {
     event.target.style.backgroundColor = '';  // Volta pra cor normal
    
 }
-
-
 
 //GO TO section animais
 const animais = document.getElementById('animais')
@@ -34,16 +38,39 @@ usamos cixa diretamente, sem precisar do event.target
 let textElements = document.querySelectorAll('.text');
 
 textElements.forEach((caixa) => {
-    caixa.addEventListener('mouseenter', () => {
-        caixa.style.backgroundColor = 'rgb(160, 202, 156)';
-        caixa.style.transform = 'scale(1.1)';
-        caixa.style.transition = 'transform 0.3s ease, background-color 0.3s ease';
-    });
+    if ("ontouchstart" in window) {
+        // Para dispositivos móveis
+        caixa.addEventListener('touchstart', () => {
+            caixa.style.backgroundColor = 'rgb(160, 202, 156)';
+            caixa.style.transform = 'scale(1.1)';
+            caixa.style.transition = 'transform 0.3s ease, background-color 0.3s ease';
+        });
 
-    caixa.addEventListener('mouseleave', () => {
-        caixa.style.backgroundColor = ''
-        caixa.style.transform = 'scale(1)';
-    });
+        caixa.addEventListener('touchend', () => {
+            caixa.style.backgroundColor = '';
+            caixa.style.transform = 'scale(1)';
+        });
+
+        // Para remover o efeito ao tocar fora da caixa
+        document.addEventListener('touchstart', (event) => {
+            if (!caixa.contains(event.target)) {
+                caixa.style.backgroundColor = '';
+                caixa.style.transform = 'scale(1)';
+            }
+        });
+    } else {
+        // Para desktops
+        caixa.addEventListener('mouseenter', () => {
+            caixa.style.backgroundColor = 'rgb(160, 202, 156)';
+            caixa.style.transform = 'scale(1.1)';
+            caixa.style.transition = 'transform 0.3s ease, background-color 0.3s ease';
+        });
+
+        caixa.addEventListener('mouseleave', () => {
+            caixa.style.backgroundColor = '';
+            caixa.style.transform = 'scale(1)';
+        });
+    }
 });
 
 //GO TO Mamiferos
