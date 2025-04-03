@@ -146,3 +146,39 @@ footer {
     /* Torna visível */
     visibility: visible;
 }
+
+@media screen and (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    
+    h1 {
+        font-size: 18px;
+    }
+ 
+    .botaoMenu {
+        font-size: 15px;
+    }
+    
+    .botaoMenu:hover {
+        background-color: rgb(134, 192, 130);
+        border-radius: 10px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    
+    
+    .text p {
+        font-size: 12px;
+    }
+    
+    #folha {
+        visibility: hidden;
+    }
+    
+    .comoAjudar {
+        padding: 8px;
+        font-family: "Lexend Deca", sans-serif;
+    }
+
+}
