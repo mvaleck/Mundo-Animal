@@ -33,7 +33,7 @@ animais.addEventListener('click', function () {
 
 /* ESTILIZAÇÃO SECTION ANIMAIS
 forEach para garantir que cada elemento receba o evento corretamente,
-usamos cixa diretamente, sem precisar do event.target
+usamos caixa diretamente, sem precisar do event.target
  */
 let textElements = document.querySelectorAll('.text');
 
@@ -77,28 +77,28 @@ textElements.forEach((caixa) => {
 const pageM = document.getElementById('pageM')
 pageM.addEventListener('click' , clicou)
 function clicou() {
-    window.location.href ='mamiferos.html'
+    window.location.href ='./pages/mamiferos.html'
 }
 
 //GO TO AVES
 const pageA = document.getElementById('pageA')
 pageA.addEventListener('click' , clicouA)
 function clicouA() {
-    window.location.href ='aves.html'
+    window.location.href ='./pages/aves.html'
 }
 
 //GO TO REPTEIS
 const pageR = document.getElementById('pageR')
 pageR.addEventListener('click' , clicouR)
 function clicouR() {
-    window.location.href ='repteis.html'
+    window.location.href ='./pages/repteis.html'
 }
 
 //GO TO INSETOS
 const pageI = document.getElementById('pageI')
 pageI.addEventListener('click' , clicouI)
 function clicouI() {
-    window.location.href = 'insetos.html'
+    window.location.href = './pages/insetos.html'
     
 }
 

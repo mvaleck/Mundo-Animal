@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     home.addEventListener('mouseleave', mouseleaveHome);
 
     function goHome() {
-        window.location.href = 'index.html'; 
+        window.location.href = '../../index.html'; 
     }
 
     function mouseenterHome() {
