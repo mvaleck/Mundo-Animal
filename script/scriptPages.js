@@ -5,12 +5,12 @@ document.addEventListener('DOMContentLoaded', function () {
     home.addEventListener('mouseleave', mouseleaveHome);
 
     function goHome() {
-        window.location.href = '../../index.html'; 
+        window.location.href = '../index.html'; 
     }
 
     function mouseenterHome() {
         home.style.color = 'white';
-        home.style.backgroundColor = 'rgb(11, 63, 9)';
+        home.style.backgroundColor = 'rgb(20, 94, 17)';
         home.style.cursor = 'pointer';
         home.style.transition = '0.3s';
     }
