@@ -51,6 +51,7 @@
 
 <h2>📌 Status do Projeto</h2>
 ✅ Finalizado como projeto pessoal de prática.
+Link: https://mvaleck.github.io/Mundo-Animal/
 
 <h2>🧑‍💻 Autora</h2>
 Feito por Milena Valeck 💙
